@@ -11,7 +11,7 @@ class Jogai < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Cassidy321/jogai/releases/download/v0.1.0/jogai_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5aa8f131ad7fab0644124fe67d744a81d351209d51b6807d4e90008f299e6b15"
+      sha256 "93fc59275e3d0b65c0f3ec5fb9055b8d76ed1c6cd3d242441bc362779bd56231"
 
       define_method(:install) do
         bin.install "jogai"
@@ -19,7 +19,7 @@ class Jogai < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Cassidy321/jogai/releases/download/v0.1.0/jogai_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7ab5da250aa8d200a6019000ea8bb0e450f6c878b1fcac840268717a06361ddc"
+      sha256 "de17788d2e090daafe15325a0e9db26a56bc251c0e30fdbef0a23e2c09a81b85"
 
       define_method(:install) do
         bin.install "jogai"
@@ -30,14 +30,14 @@ class Jogai < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Cassidy321/jogai/releases/download/v0.1.0/jogai_0.1.0_linux_amd64.tar.gz"
-      sha256 "ca750f585b4172ef9d703c46fb3e4260b35b6c790ed5efbe35478b885b3741f7"
+      sha256 "d70a5abf79e24a4444ae5ddfe54bdb866a8b125ff80b8a5f2aa0aa6f1b7ae43f"
       define_method(:install) do
         bin.install "jogai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Cassidy321/jogai/releases/download/v0.1.0/jogai_0.1.0_linux_arm64.tar.gz"
-      sha256 "9ec946278a9d9d133103f4d87f7428ff7bfa303ff3900979bed6733ba85a8841"
+      sha256 "8521d2cabc1642f5536d15b93bbb7c2d01be21e1e407d1e1eff5080ba1348ff2"
       define_method(:install) do
         bin.install "jogai"
       end
