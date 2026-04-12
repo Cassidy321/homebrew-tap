@@ -5,21 +5,21 @@
 class Jogai < Formula
   desc "AI session recaps — jog your memory"
   homepage "https://github.com/Cassidy321/jogai"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.0/jogai_0.2.0_darwin_amd64.tar.gz"
-      sha256 "caa264716e0ad5d45b6fa4a66bb4362ea19b8afbf6a85eebd789e600b6bf8e66"
+      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.1/jogai_0.2.1_darwin_amd64.tar.gz"
+      sha256 "660c570739c9a64670bf762e5685d2af063d9de9577c541435db0706ea1d7672"
 
       define_method(:install) do
         bin.install "jogai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.0/jogai_0.2.0_darwin_arm64.tar.gz"
-      sha256 "fa086ac7038930a3f7bf20c5f4eef370341e4d6e270f4cc874097a554cc1eaa8"
+      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.1/jogai_0.2.1_darwin_arm64.tar.gz"
+      sha256 "64b18d6c69d2a6bcf61fe8423bacce97c180aa10ce7b0b024085c485aa24a3fa"
 
       define_method(:install) do
         bin.install "jogai"
@@ -29,15 +29,15 @@ class Jogai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.0/jogai_0.2.0_linux_amd64.tar.gz"
-      sha256 "c9c683d1596913ba32f501747c23a5b9dc0001d60ccb6772afec13aff0272dec"
+      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.1/jogai_0.2.1_linux_amd64.tar.gz"
+      sha256 "fc6621419aa09a7dcca1070b36ce6900231a5d016c5adffa709422525ae5ac2e"
       define_method(:install) do
         bin.install "jogai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.0/jogai_0.2.0_linux_arm64.tar.gz"
-      sha256 "3c51ac3471d5c941787aa146a8a39ae090a619d83beecf45ab69c8b22e476025"
+      url "https://github.com/Cassidy321/jogai/releases/download/v0.2.1/jogai_0.2.1_linux_arm64.tar.gz"
+      sha256 "497d2899c1c8284b29b79dfe4243b9a203fe0ec5187c565a543962e714f416f9"
       define_method(:install) do
         bin.install "jogai"
       end
