@@ -4,9 +4,9 @@
 class Jogai < Formula
   desc "AI session recaps — jog your memory"
   homepage "https://github.com/Cassidy321/jogai"
-  url "https://github.com/Cassidy321/jogai/archive/refs/tags/v0.5.0.tar.gz"
-  version "0.5.0"
-  sha256 "e199f16f0fde72856c9ec18172f3c09f891a3565207f4928f2356f72f740c8c7"
+  url "https://github.com/Cassidy321/jogai/archive/refs/tags/v0.5.1.tar.gz"
+  version "0.5.1"
+  sha256 "fa00d29e6bb2f9e0d162d3c2b1d106bc8642462ffde806ce8aa192b888083790"
   license "MIT"
 
   depends_on "go" => :build
