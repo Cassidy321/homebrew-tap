@@ -16,6 +16,15 @@ class Jogai < Formula
     system "go", "build", *std_go_args(ldflags: ldflags, output: bin/"jogai"), "./cmd/jogai"
   end
 
+  def caveats
+    <<~EOS
+      jogai sets up a daily launchd job and registers itself in Claude Code.
+      Remove both before uninstalling:
+        jogai uninstall          # add --data to also delete the session archive
+        brew uninstall jogai
+    EOS
+  end
+
   test do
     assert_match "jogai #{version}", shell_output("#{bin}/jogai version")
   end
