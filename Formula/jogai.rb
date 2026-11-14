@@ -4,15 +4,15 @@
 class Jogai < Formula
   desc "AI session recaps — jog your memory"
   homepage "https://github.com/Cassidy321/jogai"
-  url "https://github.com/Cassidy321/jogai/archive/refs/tags/v1.1.1.tar.gz"
-  version "1.1.1"
-  sha256 "4e010d550213ae49a7b5a13a81950c1b65b13bb4364dd3a0f07db715b77b6249"
+  url "https://github.com/Cassidy321/jogai/archive/refs/tags/v1.1.2.tar.gz"
+  version "1.1.2"
+  sha256 "f31d7d17ef6ef939ef01a8157bb6d61c5a155fa6e4fb6fbc6028ff34d0b56bc4"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Cassidy321/jogai/releases/download/v1.1.1"
-    sha256                               arm64_sequoia: "5cd5cf6b5e7256d39bd57d3d19cf562f2ef3e6640d15a8a6c0e912f2abcd51fa"
-    sha256 cellar: :any_skip_relocation, sequoia:       "fc3edbfae3983a520b10c80eadfe0d67a9f938a94974b91840f4058dfb7a5f1c"
+    root_url "https://github.com/Cassidy321/jogai/releases/download/v1.1.2"
+    sha256                               arm64_sequoia: "f11dc58769157ead2a6d3bffa307c11a42f2f892b60c7d2ec32cb7fa31451e59"
+    sha256 cellar: :any_skip_relocation, sequoia:       "65b63c8d2425be2b366cfdfe4a9abc0e309f10730b348d32ac5aceae6274454c"
   end
 
   depends_on "go" => :build
